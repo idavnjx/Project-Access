@@ -1,13 +1,13 @@
 @font-face {
   font-family: Kefa-Regular;
   src: local("Kefa Regular"), 
-       url(Kefa-Regular.TTF);
+       url(fonts/Kefa-Regular.TTF);
 }
 
 @font-face {
   font-family: Corbel;
   src: local("Corbel"),
-       url(CORBEL.TTF);
+       url(fonts/CORBEL.TTF);
 }
 
 body {
