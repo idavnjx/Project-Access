@@ -123,3 +123,7 @@ h2 {
 #menu a{
   color: #2A3038;
 }
+
+#menu img{
+  width: 100%;
+}
