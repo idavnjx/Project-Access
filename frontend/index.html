@@ -6,12 +6,10 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Membership</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link href="Membership.css" rel="stylesheet" type="text/css" />
+	<link href="css/Membership.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-
 	</script>
 </head>
 
@@ -34,7 +32,7 @@
   </div>
 </nav>
 
-<div class="form-popup" id="Login">
+<div class="form-popup" id="Login" style="display: none;">
   <form action="/action_page.php" class="form-container">
     <button type="button" class="btn btn-xs btn-default" onclick="closeLogin()">X</button>
     <h2>Welcome</h2>
@@ -50,7 +48,7 @@
   </form>
 </div>
 
-<div class="form-popup" id="Signup">
+<div class="form-popup" id="Signup" style="display: none;">
   <form action="/action_page.php" class="form-container">
     <button type="button" class="btn btn-xs btn-default" onclick="closeSignup()">X</button>
     <h2>Welcome</h2>
@@ -69,29 +67,23 @@
 <div id="membership" class="container-fluid">
   <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
 </div>
-  
+
 <div class="container text-center">
   <br><br>    
   <div class="row" id="menu">
+    <div class="col-sm-3">
+    </div>
     <div class="col-xs-6 col-sm-3">
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <p><a href="applications/basic.html">Application</a></p>
+      <a class="nav-link" href="html/main.html">Application</a>
     </div>
     <div class="col-xs-6 col-sm-3">
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
       <p>Courses</p>    
     </div>
-    <div class="col-xs-6 col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <p>Forum</p>  
-    </div>
-    <div class="col-xs-6 col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <p>Events/Mentors</p>  
-    </div>
   </div>
 </div><br>
-  <script src="Membership.js">
+  <script src="javascript/Membership.js">
 
 	</script>
   </body>
