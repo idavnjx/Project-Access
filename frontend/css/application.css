@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Kefa-Regular;
+  src: local("Kefa Regular"), 
+       url(../fonts/Kefa-Regular.TTF);
+}
+
+@font-face {
+  font-family: Corbel;
+  src: local("Corbel"),
+       url(../fonts/CORBEL.TTF);
+}
+
+.submit {
+  background-color: #2A3038;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0% 36% 10px ;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
