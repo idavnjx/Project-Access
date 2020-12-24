@@ -41,11 +41,7 @@ h2 {
 #membership img{
   width: 100%;
 }
-.col-sm-3{
-  z-index: -1;
-}
 
-//------------------------
 
 /* The popup form - hidden by default */
 .form-popup {
