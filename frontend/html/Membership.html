@@ -20,79 +20,80 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#"><img src="../images/austria_dark.png" alt="Logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Start</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li  onclick="openLogin()"><a href="#">Login / Sign Up</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Start</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li  onclick="openLogin()"><a href="#">Login / Sign Up</a></li>
-      </ul>
+  </nav>
+
+  <div class="form-popup">
+    <form action="/action_page.php" class="form-container" id="Login">
+      <button type="button" class="btn btn-xs btn-default" onclick="closeLogin()">X</button>
+      <h2>Welcome</h2>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn login">Login</button>
+      <p onclick="openSignup()"><u>Sign Up</u></p>
+    </form>
+  </div>
+
+  <div class="form-popup">
+    <form action="/action_page.php" class="form-container" id="Signup">
+      <button type="button" class="btn btn-xs btn-default" onclick="closeSignup()">X</button>
+      <h2>Welcome</h2>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn login">Sign Up</button>
+      <p onclick="openLogin()"><u>Login</u></p>
+    </form>
+  </div>
+
+  <div id="membership" class="container-fluid">
+    <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+  </div>
+
+  <div class="container text-center">
+    <br><br>    
+    <div class="row" id="menu"><a href="applications/main.html">
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
+        <p>Application</p>
+      </a></div>
+      <div class="col-xs-6 col-sm-3"><a href="courses/homepage.html">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
+        <p>Courses</p>    
+      </a></div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
+        <p>Forum</p>  
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
+        <p>Events/Mentors</p>  
+      </div>
     </div>
   </div>
-</nav>
 
-<div class="form-popup" id="Login" style="display: none;">
-  <form action="/action_page.php" class="form-container">
-    <button type="button" class="btn btn-xs btn-default" onclick="closeLogin()">X</button>
-    <h2>Welcome</h2>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn login">Login</button>
-    <p onclick="openSignup()"><u>Sign Up</u></p>
-  </form>
-</div>
-
-<div class="form-popup" id="Signup" style="display: none;">
-  <form action="/action_page.php" class="form-container">
-    <button type="button" class="btn btn-xs btn-default" onclick="closeSignup()">X</button>
-    <h2>Welcome</h2>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn login">Sign Up</button>
-    <p onclick="openLogin()"><u>Login</u></p>
-  </form>
-</div>
-
-<div id="membership" class="container-fluid">
-  <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
-</div>
-
-<div class="container text-center">
-  <br><br>    
-  <div class="row" id="menu">
-    <div class="col-xs-6 col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <a href="main.html">Application</a>
-    </div>
-    <div class="col-xs-6 col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <p>Courses</p>    
-    </div>
-    <div class="col-xs-6 col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <p>Forum</p>  
-    </div>
-    <div class="col-xs-6 col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image">
-      <p>Events/Mentors</p>  
-    </div>
-  </div>
-</div><br>
-  <script src="../javascript/Membership.js">
-
+  <script src="../../javascript/Membership.js">
 	</script>
+
   </body>
 </html>
