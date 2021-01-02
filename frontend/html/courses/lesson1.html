@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lesson Name</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+    <link href="../../css/subcourse.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../Membership.html"><img src="../../images/austria_dark.png" alt="Logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="homepage.html">Course name</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <a class="navbar-brand" id="id"><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"></a>
+            <li onclick="openLogin()"><a href="#">Student Name</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="form-popup">
+      <form action="/action_page.php" class="form-container" id="Login">
+        <button type="button" class="btn btn-xs btn-default" onclick="closeLogin()">X</button>
+        <h2>Welcome</h2>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn login">Login</button>
+        <p onclick="openSignup()"><u>Sign Up</u></p>
+      </form>
+    </div>
+
+    <div class="form-popup">
+      <form action="/action_page.php" class="form-container" id="Signup">
+        <button type="button" class="btn btn-xs btn-default" onclick="closeSignup()">X</button>
+        <h2>Welcome</h2>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn login">Sign Up</button>
+        <p onclick="openLogin()"><u>Login</u></p>
+      </form>
+    </div>
+    
+    <div id="first">
+      <div class="col-sm-2" id="weekly"><span class="border">
+        <br>
+        <ul>
+          <li><a href="#">Week 1</a></li>
+          <li><a href="#">Week 2</a></li>
+          <li><a href="#">Week 3</a></li>
+        </ul>
+        <br>
+      </span></div>
+      <div class="col-sm-9">
+        <span class="border body" id="lesson">
+          <img src="../../images/lesson_icon.png">
+          <h5><b>Lesson</b></h5>
+          <p id="date"> Dec 24 </p>
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. </p>
+          
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah.</p>
+         
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah.</p>
+
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. </p>
+
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah.</p>
+         
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah.</p>
+
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. </p>
+
+          <p> Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. Today's Lesson is blah blah blah. </p>
+        </span>
+        <div id="last" class="col-xs-9">
+          <div>
+            <a type="submit" class="btn arw prev col-xs-3" href="homepage.html">Back</a>
+          </div>
+          <div class="col-xs-6"></div>
+          <div>
+            <a type="submit" class="btn arw next col-xs-3" href="lesson2.html">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../javascript/subcourse.js">
+    </script>
+  </body>
+</html>
