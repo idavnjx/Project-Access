@@ -46,6 +46,7 @@ h5 {
   border-radius: 50%;
 }
 
+//------------------------
 
 /* The popup form - hidden by default */
 .form-popup {
@@ -178,6 +179,11 @@ h5 {
   float: left;
 }
 
+.stream a{
+  color: #2A3038;
+  text-decoration: none;
+}
+
 #lesson:hover {
   background-color: whitesmoke;
   cursor: pointer;
@@ -195,4 +201,20 @@ h5 {
 
 #organize a{
   color: #2A3038;
+}
+
+.grid {
+  width: 30%;
+  margin: 0px 3px 15px;
+}
+
+#check {
+  position: relative;
+  top: 2px;
+  right: 2px;
+  height: 30px;
+  width: 25px;
+  float: right;
+  padding: 0px;
+  margin: 0px 0px 0px 5px;
 }
