@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Membership</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="css/Membership.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+	</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" id="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="images/austria_dark.png" alt="Logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Start</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+	      <ul class="nav navbar-nav navbar-right">
+          <li onclick="openLogin()"><a href="#">Login / Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="form-popup">
+    <form action="/action_page.php" class="form-container" id="Login">
+      <button type="button" class="btn btn-xs btn-default" onclick="closeLogin()">X</button>
+      <h2>Welcome</h2>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn login">Login</button>
+      <p onclick="openSignup()"><u>Sign Up</u></p>
+    </form>
+  </div>
+
+  <div class="form-popup" id="form">
+    <form action="/action_page.php" class="form-container" id="Signup">
+      <button type="button" class="btn btn-xs btn-default" onclick="closeSignup()">X</button>
+      <h2>Welcome</h2>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn login">Sign Up</button>
+      <p onclick="openLogin()"><u>Login</u></p>
+    </form>
+  </div>
+
+  <section class="jumbotron text-center" id="title" style="background-color:rgb(253, 169, 41);">
+    <div class="container">
+      <h1 class="jumbotron-heading">Membership</h1>
+      <p class="lead text-muted">"Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family."</p>
+    </div>
+  </section>
+
+  <div class="container" id='membership'>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Application</h2>
+        <p>Ready to apply? Fill out a simple application form to start your journey at Project Access!</p>
+        <p><a class="btn btn-secondary" href="html/applications/main.html" role="button">Start your application here &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Courses</h2>
+        <p>A place where you can learn from your instructors about skills in college applications, essay writing, as well as academic challenging courses. </p>
+        <p><a class="btn btn-secondary" href="html/courses/homepage.html" role="button">Access your courses here &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Forum</h2>
+        <p>Discuss your ideas on college applications with your peers in Project Access!</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Chat with your peers &raquo;</a></p>
+      </div>
+    </div>
+
+
+  </div> 
+
+  <div class="jumbotron text-center" style="margin-bottom:0; margin-top: 1em;">
+    <p>© Project Access Austria - Projekt Hochschulzugang e.V. 2020</p>
+  </div>
+
+  
+  <script src="javascript/Membership.js">
+	</script>
+  
+  </body>
+</html> 
