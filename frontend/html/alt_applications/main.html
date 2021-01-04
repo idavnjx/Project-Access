@@ -62,6 +62,9 @@
               <a class="nav-link active" href="main.html">Main Application</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link disabled" href="review.html">Review and Submit</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link disabled" href="consultation.html">Consultation Session</a>
             </li>
             <li class="nav-item">
@@ -70,22 +73,31 @@
           </ul>
           <hr class="d-sm-none">
         </div>
-
         <div class="col-sm-8">
-          <div class="card">
-            <div class="card-header">
-              Application
+          <form>
+            <div class="form-group">
+              <label for="whatDoYouHopeToGet">What do you hope to get from this mentorship?</label>
+              <textarea class="form-control" id="whatDoYouHopeToGet" rows="2" placeholder="Type answer..."></textarea>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">You will be redirect to an application page</h5>
-              <p class="card-text">It's your first step towards being a member of Project Access. This application should take you around 15 minutes.</p>
-              <a href="https://airtable.com/shrBCirF9JDN54Nph" class="btn btn-primary">Start Application</a>
+            <div class="form-group">
+              <label for="hours">How many hours in a week are you willing to commit?</label>
+              <br>
+              <input type="text" placeholder="Enter Number of Hours" name="hours" required>
             </div>
+            <div class="form-group">
+              <label for="whatAreYourGoals">List 3 of your Goals:</label>
+              <textarea class="form-control" id="whatAreYourGoals1" rows="1" placeholder="Goal 1"></textarea>
+              <textarea class="form-control" id="whatAreYourGoals2" rows="1" placeholder="Goal 2"></textarea>
+              <textarea class="form-control" id="whatAreYourGoals3" rows="1" placeholder="Goal 3"></textarea>
+            </div>
+          </form>
+          <div class="d-flex justify-content-center">
+              <a type="submit" class="btn submit col-xs-4" href="review.html">Submit</a>
           </div>
         </div>
       </div>
     </div>
-
+  
     <div class="jumbotron text-center" style="margin-bottom:0; margin-top: 8.5em">
       <p>© Project Access Austria - Projekt Hochschulzugang e.V. 2020</p>
     </div>

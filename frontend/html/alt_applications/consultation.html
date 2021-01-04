@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Start your Application</title>
+  <title>Consultation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -12,7 +12,6 @@
   <link href="../../css/application.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
   <div id="total">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="navbar-brand" href="#">Project Access</a>
@@ -39,17 +38,19 @@
   
     <div class="page-header text-center" style="margin-top:20px">
         <img src="../../images/austria_dark.png" width="57.375" height="57.375" alt='Logo' class="logo">
-      <h1>Your Application Starts Here</h1>
-    </div>
+      <h1>Set Your Consultation Date</h1>
+    </div>  
+
   </div>
 
-  
+
+
   <div id="content">
     <div class="container" style="margin-top:30px">
       <div class="row" style="margin-bottom:10px">
         <div class="col-sm-4">
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
             </div>
         </div>
       </div>
@@ -59,10 +60,13 @@
           <p>Good Luck with everything!</p>
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="main.html">Main Application</a>
+              <a class="nav-link" href="main.html">Main Application</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="consultation.html">Consultation Session</a>
+              <a class="nav-link" href="review.html">Review and Submit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="consultation.html">Consultation Session</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="decision.html">Decision</a>
@@ -70,26 +74,25 @@
           </ul>
           <hr class="d-sm-none">
         </div>
-
         <div class="col-sm-8">
-          <div class="card">
-            <div class="card-header">
-              Application
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">You will be redirect to an application page</h5>
-              <p class="card-text">It's your first step towards being a member of Project Access. This application should take you around 15 minutes.</p>
-              <a href="https://airtable.com/shrBCirF9JDN54Nph" class="btn btn-primary">Start Application</a>
-            </div>
+          <h2>Congratulations!</h2>
+          <p>We are impressed with you application and would love to get to know you better in an interview. Please select a date that would work for you.</p>
+          <br>
+          <h5>Calendar</h5>
+          <div class="fakeimg">Calendar Interface</div>
+  
+          <p>Details of your interview will be sent to your email addresss.</p>
+          <div class="d-flex justify-content-center">
+            <a type="submit" class="btn submit col-xs-4" href="decisionwait.html">Done</a>
           </div>
         </div>
       </div>
     </div>
-
+  
     <div class="jumbotron text-center" style="margin-bottom:0; margin-top: 8.5em">
       <p>© Project Access Austria - Projekt Hochschulzugang e.V. 2020</p>
-    </div>
-  
+    </div>  
+
   </div>
 
 </body>
