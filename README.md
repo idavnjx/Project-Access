@@ -12,7 +12,7 @@ We had to give up a lot of our initial plans and tried our best to refocus our a
 
 Thank you for reading, and I hope our crippled work would be helpful to some degree :)
 
-- Junxiong Niu (David), Project Manager, Team 12
+*Junxiong Niu (David), Project Manager, Team 12*
 
 ## How to run this web platform locally?
 
